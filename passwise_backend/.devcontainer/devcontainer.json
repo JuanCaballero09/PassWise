@@ -1,0 +1,14 @@
+{
+  "name": "Passwise Backend DevContainer",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "db",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [3000, 5432],
+  "postCreateCommand": "bundle install",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": ["rebornix.Ruby", "misogi.ruby-rubocop"]
+    }
+  }
+}
